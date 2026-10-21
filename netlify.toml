@@ -1,0 +1,15 @@
+# DOCALSA ONE — independent demo site. No production configuration.
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/inicio.html"
+  status = 302
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Robots-Tag = "noindex, nofollow"
