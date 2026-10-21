@@ -1,0 +1,8 @@
+# Keep credentials, local caches and deploy artifacts out of Git.
+.env
+.env.*
+!.env.example
+.netlify/
+node_modules/
+.DS_Store
+*.zip
